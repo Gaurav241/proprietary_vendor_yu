@@ -20,6 +20,39 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),lettuce)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := embms
+LOCAL_MODULE_OWNER := yu
+LOCAL_SRC_FILES := proprietary/app/embms/embms.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := ims
+LOCAL_MODULE_OWNER := yu
+LOCAL_SRC_FILES := proprietary/app/ims/ims.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := imssettings
+LOCAL_MODULE_OWNER := yu
+LOCAL_SRC_FILES := proprietary/app/imssettings/imssettings.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libmdmdetect
 LOCAL_MODULE_OWNER := yu
 LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libmdmdetect.so
@@ -181,6 +214,17 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar
 LOCAL_VENDOR_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := uceShimService
+LOCAL_MODULE_OWNER := yu
+LOCAL_SRC_FILES := proprietary/app/uceShimService/uceShimService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 endif

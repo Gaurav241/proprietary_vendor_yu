@@ -253,18 +253,62 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
     vendor/yu/lettuce/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so
 
+PRODUCT_COPY_FILES += \
+    vendor/yu/lettuce/proprietary/framework/com.qualcomm.qti.imscmservice@1.0-java.jar:system/framework/com.qualcomm.qti.imscmservice@1.0-java.jar \
+    vendor/yu/lettuce/proprietary/framework/com.qualcomm.qti.imscmservice@1.1-java.jar:system/framework/com.qualcomm.qti.imscmservice@1.1-java.jar \
+    vendor/yu/lettuce/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
+    vendor/yu/lettuce/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/yu/lettuce/proprietary/lib/com.qualcomm.qti.imscmservice@1.1.so:system/lib/com.qualcomm.qti.imscmservice@1.1.so \
+    vendor/yu/lettuce/proprietary/lib/lib-imscamera.so:system/lib/lib-imscamera.so \
+    vendor/yu/lettuce/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
+    vendor/yu/lettuce/proprietary/lib/lib-imsvt.so:system/lib/lib-imsvt.so \
+    vendor/yu/lettuce/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
+    vendor/yu/lettuce/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
+    vendor/yu/lettuce/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
+    vendor/yu/lettuce/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
+    vendor/yu/lettuce/proprietary/lib/vendor.qti.imsrtpservice@1.0.so:system/lib/vendor.qti.imsrtpservice@1.0.so \
+    vendor/yu/lettuce/proprietary/vendor/bin/ims_rtp_daemon:system/vendor/bin/ims_rtp_daemon \
+    vendor/yu/lettuce/proprietary/vendor/bin/imsdatadaemon:system/vendor/bin/imsdatadaemon \
+    vendor/yu/lettuce/proprietary/vendor/bin/imsqmidaemon:system/vendor/bin/imsqmidaemon \
+    vendor/yu/lettuce/proprietary/vendor/bin/imsrcsd:system/vendor/bin/imsrcsd \
+    vendor/yu/lettuce/proprietary/vendor/etc/permissions/com.qualcomm.qti.imscmservice.xml:system/vendor/etc/permissions/com.qualcomm.qti.imscmservice.xml \
+    vendor/yu/lettuce/proprietary/vendor/etc/permissions/com.qualcomm.qti.imscmservice_1_1.xml:system/vendor/etc/permissions/com.qualcomm.qti.imscmservice_1_1.xml \
+    vendor/yu/lettuce/proprietary/vendor/etc/permissions/embms.xml:system/vendor/etc/permissions/embms.xml \
+    vendor/yu/lettuce/proprietary/vendor/etc/permissions/qti-vzw-ims-internal.xml:system/vendor/etc/permissions/qti-vzw-ims-internal.xml \
+    vendor/yu/lettuce/proprietary/vendor/etc/permissions/qti_permissions.xml:system/vendor/etc/permissions/qti_permissions.xml \
+    vendor/yu/lettuce/proprietary/vendor/framework/qti-vzw-ims-internal.jar:system/vendor/framework/qti-vzw-ims-internal.jar \
+    vendor/yu/lettuce/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.1_vendor.so:system/vendor/lib/com.qualcomm.qti.imscmservice@1.1_vendor.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/lib-imscmservice.so:system/vendor/lib/lib-imscmservice.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/lib-imsdpl.so:system/vendor/lib/lib-imsdpl.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/lib-imsxml.so:system/vendor/lib/lib-imsxml.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/lib-rtpcommon.so:system/vendor/lib/lib-rtpcommon.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.ims@1.0_vendor.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so:system/vendor/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so \
+    vendor/yu/lettuce/proprietary/vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so:system/vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so
+
 PRODUCT_PACKAGES += \
-    libmdmdetect \
-    libtime_genoff \
+    colorservice \
+    embms \
+    ims \
+    imssettings \
     libloc_api_v02 \
     libloc_ds_api \
+    libmdmdetect \
     libqcci_legacy \
     libqmi \
     libqmi_client_qmux \
     libqmiservices \
-    qcrilmsgtunnel \
-    TimeService \
-    colorservice \
-    shutdownlistener \
+    libtime_genoff \
     qcnvitems \
-    qcrilhook
+    qcrilhook \
+    qcrilmsgtunnel \
+    shutdownlistener \
+    TimeService \
+    uceShimService
