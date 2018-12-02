@@ -263,6 +263,7 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/framework/com.qualcomm.qti.imscmservice@1.0-java.jar:system/framework/com.qualcomm.qti.imscmservice@1.0-java.jar \
     vendor/yu/lettuce/proprietary/framework/com.qualcomm.qti.imscmservice@1.1-java.jar:system/framework/com.qualcomm.qti.imscmservice@1.1-java.jar \
     vendor/yu/lettuce/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
+    vendor/yu/lettuce/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/yu/lettuce/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/yu/lettuce/proprietary/lib/com.qualcomm.qti.imscmservice@1.1.so:system/lib/com.qualcomm.qti.imscmservice@1.1.so \
     vendor/yu/lettuce/proprietary/lib/lib-imscamera.so:system/lib/lib-imscamera.so \
@@ -314,7 +315,6 @@ PRODUCT_PACKAGES += \
     colorservice \
     embms \
     ims \
-    imssettings \
     libloc_api_v02 \
     libloc_ds_api \
     libmdmdetect \
