@@ -36,6 +36,7 @@ PRODUCT_COPY_FILES += \
     vendor/yu/lettuce/proprietary/vendor/bin/qmuxd:system/vendor/bin/qmuxd \
     vendor/yu/lettuce/proprietary/vendor/bin/qseecomd:system/vendor/bin/qseecomd \
     vendor/yu/lettuce/proprietary/vendor/bin/radish:system/vendor/bin/radish \
+    vendor/yu/lettuce/proprietary/vendor/bin/rild:system/bin/rild \
     vendor/yu/lettuce/proprietary/vendor/bin/rmt_storage:system/vendor/bin/rmt_storage \
     vendor/yu/lettuce/proprietary/vendor/bin/tftp_server:system/vendor/bin/tftp_server \
     vendor/yu/lettuce/proprietary/vendor/bin/time_daemon:system/vendor/bin/time_daemon \
